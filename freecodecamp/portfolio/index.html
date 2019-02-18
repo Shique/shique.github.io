@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <script src="assets/main.js"></script>
+</head>
+<body>
+    <!-- Siderbar Toggle -->
+    <a class="menu-toggle rounded" id="sidebar-toggle" href="#">
+        <i class="fa fa-bars"></i>
+    </a>
+    
+    <!-- Sidebar -->
+    <nav id="sidebar" style="display: none;">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+            <span>Menu</span>
+        </div>
+        
+        <ul class="list-unstyled sidebar-components">
+            <li class="sidebar-item">
+                <a href="#welcome">Home/ Top</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#about">About</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li class="sidebar-item">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!-- Welcome -->
+    <section id="welcome">
+        <div id="welcome-logo"><div>AkustikWave</div></div>
+    </section>
+    
+    <!-- About -->
+    <section class="content-section" id="about">
+        <h1>Personal Porfolio Page</h1>
+        <span id="about-me">
+            To server as proof of completing a task for Free Code Camp
+        </span>
+    </section>
+    
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+        <div class="services-container">
+            <div class="service-icon-container">
+                <i class="fa fa-crop fa-4x"></i>
+                <h1>Web Design</h1>
+            </div>
+            <div class="service-icon-container">
+                <i class="fas fa-paint-brush fa-4x"></i>
+                <h1>Styling</h1>
+            </div>
+            <div class="service-icon-container">
+                <i class="fas fa-smile-wink fa-4x"></i>
+                <h1>Good taste</h1>
+            </div>
+        </div>
+        <br><br>
+        <h3>Utilising</h3>
+        <i class="fab fa-codepen fa-4x" title="CodePen"></i>
+        <i class="fas fa-atom fa-4x" title="Atom"></i>
+        <i class="fab fa-firefox fa-4x" title="Firefox"></i>
+        <i class="fab fa-free-code-camp fa-4x" title="FreeCodeCam"></i>
+        <i class="fab fa-font-awesome fa-4x" title="Font Awesome"></i>
+        <i class="fab fa-stack-overflow fa-4x" title="StackOverflow"></i>
+        <i class="fas fa-paste fa-4x" title="Copy/ Paste :)"></i>
+    </section>
+    
+    <!-- Contact -->
+    <section class="content-section" id="contact">
+        <h1>Contact</h1>
+        <p id="contact-me">
+            <span>This is just for exemplary purposes.</span>
+            <br>
+            <br>
+            <span>Please contact my manager.</span>
+        </p>
+        <div id="contact-details">
+            <div class="contact-wrapper">
+                <i class="fas fa-phone" title="Phone number"></i>
+                <span>+00123 0 1234 123 123</span>
+            </div>
+            <div class="contact-wrapper">
+                <i class="far fa-envelope" title="E-mail address"></i>
+                <span>no-reply@no-domain.com</span>
+            </div>
+            <div class="contact-wrapper" id="contact-address">
+                <i class="fas fa-map-marker" title="Address">Address</i>
+                <br>
+                <span>Full Name of Person</span>
+                <br>
+                <span>Street Name</span>
+                <br>
+                <span>City Name</span>
+                <br>
+                <span>District</span>
+                <br>
+                <span>Post Code</span>
+                <br>
+                <span>Country</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

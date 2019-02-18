@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.menu-toggle {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(52,58,64,.5);
+    line-height: 50px;
+    z-index: 999;
+}
+#sidebar {
+    font-family: 'Lobster', cursive;
+    text-shadow: 1.5px 0.5px 0px #000000, 2.5px 1.5px 0px rgba(0,0,0,0.1);
+    
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    z-index: 998;
+}
+.sidebar-header {
+    text-shadow: none;
+    font-size: 1.8rem;
+    font-weight: 800;
+    border-bottom: 1px solid #1D809F;
+    
+    padding: 15px;
+    line-height: 50px;
+    background-color: #FFFFFF;
+    color: #1D809F;
+}
+.sidebar-components {
+    font-weight: 500;
+    font-size: 1.2rem;
+    
+    height: 100%;
+    color: #FFFFFF;
+    background-color: #1D809F;
+}
+.sidebar-item {
+    padding: 15px;
+}
+.sidebar-item:hover {
+    color: #1D809F;
+    background-color: #FFFFFF;
+    text-shadow: none;
+}
+.sidebar-components a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#welcome {
+    text-align: center;
+    height: 99vh;
+    background-color: #F1BE1D;
+}
+#welcome-logo {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    
+    font-family: 'Marck Script', cursive;
+    font-size: 3.4rem;
+    color: #FEFBFB;
+    text-shadow: 1.5px 1px 0px #D10E31, 2.5px 2.5px 0px rgba(0,0,0,0.1);
+}
+#welcome-logo::before {
+    content: "";
+    position: absolute;
+    
+    top: 60%;
+    height: 15px;
+    width: 150%;
+    left: -30%;
+    border-radius: 100% 0 100% 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    animation: pulse 3s linear 1s infinite alternate;
+}
+#welcome-logo::after {
+    content: "Simplicity at a glance";
+    position: absolute;
+    
+    top: 80%;
+    left: 50%;
+    width: 100%;
+    font-size: 1rem;
+    text-shadow: none;
+}
+
+@keyframes pulse {
+    from {
+        width: 200%;
+        left: -50%;
+    }
+    to {
+        width: 150%;
+        left: -30%;
+    }
+}
+
+#about-me {
+    font-size: 1.2rem;
+}
+#portfolio {
+    color: #FFFFFF;
+    background-color: #5E96C9;
+}
+.services-container {
+    justify-content: center;
+    display: flex;
+}
+.service-icon-container {
+    padding: 20px;
+}
+#portfolio i {
+    padding: 15px;
+}
+
+.content-section {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.content-section h1 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+#contact {
+    background-color: #262626;
+    color: #FFFFFF;
+}
+.contact-wrapper {
+    display: block;
+    padding: 10px;
+}
+
+#contact-details {
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    
+    text-align: left;
+    
+    background-color: #FFFFFF;
+    color: #262626;
+}
