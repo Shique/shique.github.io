@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+body {
+    min-width: 320px;
+    
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-align: center;
+
+    background-color: #1F1F1F;
+}
+h1 {
+    color: #FFFFFF;
+}
+#form-wrapper {
+    height: 80%;
+    width: 75%;
+    min-width: 420px;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 20px;
+    
+    border-radius: 5px;
+
+    background-color: #FAFAFA;
+}
+#survey-form {
+    padding: 20px;
+}
+.left-side {
+    width: 40%;
+
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+
+    padding: 5px;
+    margin-top: 8px;
+}
+.right-side {
+    width: 48%;
+    
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+
+    padding: 10px;
+}
+.input-field {
+    height: 25px;
+    width: 280px;
+
+    border-radius: 2px;
+    border: 1px solid #c0c0c0;
+}
+.dropdown {
+    height: 25px;
+    width: 140px;
+
+    border-radius: 2px;
+    border: 1px solid #c0c0c0;
+}
+#comments {
+    height: 50px;
+}
+#submit {
+    text-transform: uppercase;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    
+    padding-right: 15px;
+
+    border: 1px solid #1F1F1F;
+    border-radius: 2px;
+    
+    background-color: #FAFAFA;
+}
+#submit:hover {
+    padding-left: 17px;
+    padding-right: 17px;
+    
+    color: #0096FA;
+}
+
+@media screen and (max-width: 833px) {
+    .input-field {
+        width: 80%;
+    }
+    select {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .left-side {
+        width: 100%;
+        text-align: left;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .input-field {
+        width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+}

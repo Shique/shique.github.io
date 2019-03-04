@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Submission form</title>
+    <meta name="description" content="Submission form created for FreeCodeCamp">
+    <meta name="author" content="EP">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <div id="form-wrapper">
+        <p id="description">
+            A form for exemplary purposes
+        </p>
+        <form id="survey-form" method="post" action="">
+            <!--  Name  -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="name-label" for="name">* Name:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <input class="input-field" id="name" name="name" type="text" placeholder="Enter your name" required>
+                </div>
+            </div>
+            
+            <!-- Email  -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="email-label" for="email">* Email:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <input class="input-field" id="email" name="email" type="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <!-- Number -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="number-label" for="number">* Age:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <input class="input-field" id="number" name="age" type="number" min="1" max="125" placeholder="Enter your age" required>
+                </div>
+            </div>
+
+            <!-- Dropdown select -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="role-label" for="dropdown">Which options best describes your current role?</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <select class="dropdown" id="dropdown" name="role" placeholder="Select role">
+                        <option value disabled selected>Select role</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="retiree">Retiree</option>
+                        <option value="baby">Baby</option>
+                    </select> 
+                </div>
+            </div>
+
+            <!-- Radio checkboxes -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="number-label" for="age">Gender:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <div class="radio">
+                        <input class="input-radio" type="radio" id="male-radio" name="gender" value="male">
+                        <label class="gender-label" for="male-radio">Male</label>
+                    </div>
+                    <div class="radio">
+                        <input class="input-radio" type="radio" id="female-radio" name="gender" value="female">
+                        <label class="gender-label" for="female-radio">Female</label>
+                    </div>
+                    <div class="radio">
+                        <input class="input-radio" type="radio" id="other-radio" name="gender" value="other">
+                        <label class="gender-label" for="other-radio">Other</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkboxes -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="checkbox-label">Reason for learning:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <!-- Checkbox group -->
+                    <div class="radio">
+                        <input class="input-checkbox" type="checkbox" id="developer" name="attributes" value="developer">
+                        <label for="developer">Developer</label>
+                    </div>
+                    <!-- Checkbox group -->
+                    <div class="radio">
+                        <input class="input-checkbox" type="checkbox" id="hobbyist" name="attributes" value="hobbyist">
+                        <label for="hobbyist">Hobbyist</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Comment -->
+            <div class="row">
+                <!-- Left side -->
+                <div class="left-side">
+                    <label id="number-label" for="age">Comments:</label>
+                </div>
+                <!-- Right side -->
+                <div class="right-side">
+                    <textarea class="input-field" id="comments" name="comment" placeholder="Any comments ..."></textarea>
+                </div>
+            </div>
+            
+            <!-- Submit -->
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
